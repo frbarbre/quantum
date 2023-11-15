@@ -1,11 +1,15 @@
 import Link from "next/link";
 import Button from "./Button";
+import { nanoid } from "nanoid";
 
 export default function Products({ categoryArray, pathname }) {
   return (
     <div className="mt-[64px] md:mt-[120px] lg:mt-[160px] mb-[104px] md:mb-[160px] lg:mb-[180px] flex flex-col gap-[120px] lg:gap-[160px]">
       {categoryArray?.map((category) => (
-        <div className="flex flex-col lg:flex-row lg:even:flex-row-reverse gap-[32px] md:gap-[52px] lg:gap-[125px] items-center">
+        <div
+          key={nanoid()}
+          className="flex flex-col lg:flex-row lg:even:flex-row-reverse gap-[32px] md:gap-[52px] lg:gap-[125px] items-center"
+        >
           <div>
             <img
               className="rounded-[8px] max-w-[460px] w-full"

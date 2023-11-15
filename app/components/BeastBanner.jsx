@@ -2,7 +2,7 @@ import { products } from "../data";
 import Button from "./Button";
 import Link from "next/link";
 
-export default function GamingBanner() {
+export default function BeastBanner() {
   const pc = products[2];
 
   return (

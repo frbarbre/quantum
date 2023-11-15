@@ -55,7 +55,7 @@ export default function Cart({ openCart, setOpenCart }) {
           </div>
         )}
         {cart?.map((product) => (
-          <div>
+          <div key={nanoid()}>
             <CartItem product={product} key={nanoid()} />
           </div>
         ))}

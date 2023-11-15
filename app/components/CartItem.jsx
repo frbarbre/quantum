@@ -1,5 +1,4 @@
 import { useCartStore } from "../store";
-import Image from "next/image";
 
 export default function CartItem({ product }) {
   const addToCart = useCartStore((state) => state.addToCart);
@@ -9,8 +8,8 @@ export default function CartItem({ product }) {
   return (
     <div className="flex w-full justify-between mt-[24px] items-center">
       <div className="flex items-center">
-        <Image
-          src={product?.image?.mobile}
+        <img
+          src={product?.gallery.first}
           width={64}
           height={64}
           alt="Logo"

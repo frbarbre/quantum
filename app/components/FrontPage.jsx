@@ -1,8 +1,8 @@
 import Hero from "./Hero";
 import Categories from "./Categories";
-import GamingPromo from "./GamingPromo";
-import GamingBanner from "./GamingBanner";
-import EarbudPromo from "./EarbudPromo";
+import WorkhorsePromo from "./WorkhorsePromo";
+import BeastBanner from "./BeastBanner";
+import StarterPromo from "./StarterPromo";
 import Pitch from "./Pitch";
 
 export default function FrontPage() {
@@ -13,9 +13,9 @@ export default function FrontPage() {
         <div className="mb-[60px] md:mb-[36px] lg:mb-[108px] mt-[92px] md:mt-[148px] lg:mt-[200px]">
           <Categories />
         </div>
-        <GamingPromo />
-        <GamingBanner />
-        <EarbudPromo />
+        <WorkhorsePromo />
+        <BeastBanner />
+        <StarterPromo />
         <Pitch />
       </div>
     </main>

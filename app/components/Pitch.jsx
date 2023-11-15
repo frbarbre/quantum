@@ -22,15 +22,14 @@ export default function Pitch() {
       </div>
       <div className="w-full text-center md:text-left">
         <h2 className="font-bold uppercase text-[28px] tracking-[1px] md:text-[40px] md:tracking-[1.43px] md:leading-[44px]">
-          Bringing you the <span className="text-primary">best</span> audio gear
+          Bringing you the <span className="text-primary">best</span> PC solutions
         </h2>
         <p className="font-medium opacity-50 text-[15px] leading-[25px] pt-[32px] max-w-[573px] mx-auto lg:mx-0">
-          Located at the heart of New York City, Audiophile is the premier store
-          for high end headphones, earphones, speakers, and audio accessories.
-          We have a large showroom and luxury demonstration rooms available for
-          you to browse and experience a wide range of our products. Stop by our
-          store to meet some of the fantastic people who make Audiophile the
-          best place to buy your portable audio equipment.
+          Based in the cultural hub of Aarhus, Quantum brings innovative PC
+          solutions to Denmark. Explore our comprehensive showroom and
+          experience firsthand our range of cutting-edge technology. Visit us in
+          Aarhus and meet our passionate team committed to making Quantum your
+          prime destination for top-tier computing experiences.
         </p>
       </div>
     </div>

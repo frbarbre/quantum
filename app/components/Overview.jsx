@@ -7,7 +7,7 @@ export default function Overview({ productArray }) {
         <img
           className="rounded-[8px] max-h-[560px] w-full aspect-square object-contain"
           src={productArray?.image}
-          alt={productArray.shortName}
+          alt={productArray?.shortName}
         />
       </div>
       <div className="md:w-max">

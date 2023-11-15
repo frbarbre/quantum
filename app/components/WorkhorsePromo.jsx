@@ -2,7 +2,7 @@ import { products } from "../data";
 import Button from "./Button";
 import Link from "next/link";
 
-export default function GamingPromo() {
+export default function WorkhorsePromo() {
   const pc = products[1];
 
   return (

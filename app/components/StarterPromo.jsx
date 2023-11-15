@@ -2,7 +2,7 @@ import { products } from "../data";
 import Link from "next/link";
 import Button from "./Button";
 
-export default function EarbudProme() {
+export default function StarterProme() {
   const pc = products[0];
 
   return (
