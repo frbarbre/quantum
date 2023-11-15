@@ -400,7 +400,7 @@ export const products = [
     components: [
       {
         component: "CPU",
-        details: "Intel Xeon or AMD EPYC Processor",
+        details: "AMD Threadripper 7980X",
         price: 5000,
         icon: "/icons/cpu.svg",
       },
