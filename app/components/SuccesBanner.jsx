@@ -66,8 +66,8 @@ export default function SuccesBanner() {
                       className="flex justify-between items-center"
                     >
                       <div className="flex items-center">
-                        <Image
-                          src={cart.image.mobile}
+                        <img
+                          src={cart.gallery.first}
                           width={64}
                           height={64}
                           alt="Logo"
@@ -87,8 +87,8 @@ export default function SuccesBanner() {
               ) : (
                 <div className="flex justify-between items-center">
                   <div className="flex items-center">
-                    <Image
-                      src={cart[0]?.image.mobile}
+                    <img
+                      src={cart[0]?.gallery.first}
                       width={64}
                       height={64}
                       alt="Logo"
@@ -104,17 +104,21 @@ export default function SuccesBanner() {
                   <p className="opacity-50 font-bold">x{cart[0]?.quantity}</p>
                 </div>
               )}
-              <div className="border-b border-black opacity-[0.079]"></div>
-              <p
-                className="font-bold text-center opacity-50 mb-[25px] md:mb-[0px] mt-[12px] cursor-pointer"
-                onClick={() => setShowMore(!showMore)}
-              >
-                {showMore
-                  ? "Show less"
-                  : `and ${cart?.length - 1} other item${
-                      cart?.length - 1 === 1 ? "" : "s"
-                    }`}
-              </p>
+              {cart?.length > 1 && (
+                <>
+                  <div className="border-b border-black opacity-[0.079]"></div>
+                  <p
+                    className="font-bold text-center opacity-50 mb-[25px] md:mb-[0px] mt-[12px] cursor-pointer"
+                    onClick={() => setShowMore(!showMore)}
+                  >
+                    {showMore
+                      ? "Show less"
+                      : `and ${cart?.length - 1} other item${
+                          cart?.length - 1 === 1 ? "" : "s"
+                        }`}
+                  </p>
+                </>
+              )}
             </div>
           )}
           <div className="bg-black rounded-b-lg md:rounded-r-lg md:rounded-bl-none md:w-[40%] text-white md:flex md:justify-center md:items-center">

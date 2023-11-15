@@ -1,6 +1,7 @@
 import { useCartStore } from "../store";
 import { useState } from "react";
 import Button from "./Button";
+import { toast } from "sonner";
 
 export default function AddToCart({ productArray }) {
   const submitToCart = useCartStore((state) => state.submitToCart);
@@ -10,6 +11,7 @@ export default function AddToCart({ productArray }) {
   function handleSubmit() {
     submitToCart(productArray, count);
     setCount(1);
+    toast.success("Added to cart");
   }
 
   function handleChange(value) {
@@ -36,7 +38,7 @@ export default function AddToCart({ productArray }) {
       <div onClick={handleSubmit}>
         <Button
           text={"add to cart"}
-          color={"text-white bg-grad hover:bg-grad-pale"}
+          color={"text-white bg-grad hover:bg-grad-pale cursor-pointer"}
         />
       </div>
     </div>

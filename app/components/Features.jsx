@@ -9,9 +9,9 @@ export default function Features({ productArray }) {
         </h2>
         <ul className="md:flex-1 lg:flex-none gap-[8px] flex flex-col">
           {productArray?.components?.map((item) => (
-            <li key={nanoid()} className="flex justify-between items-end">
+            <li key={nanoid()} className="flex justify-between items-end gap-[12px]">
               <div className="flex gap-[18px] items-center">
-                <img src={item.icon} alt="" className="w-[18px]" />
+                <img src={item.icon} alt="" className="w-[18px] max-h-[18px] object-contain" />
                 <p className="font-semibold text-[15px] leading-[25px]">
                   <span className="opacity-50">{item.component}</span>
                   <br />
